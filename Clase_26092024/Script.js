@@ -1,5 +1,3 @@
-const { doc } = require("mocha/lib/reporters");
-
 function appendToDisplay(value) {
     document.getElementsById('display').value += value;
 }
