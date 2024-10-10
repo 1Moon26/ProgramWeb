@@ -1,14 +1,14 @@
 function appendToDisplay(value) {
-    document.getElementsById('display').value += value;
+    document.getElementById('display').value += value;
 }
 
 function clearDisplay() {
-    document.getElementById('display').value = '';
+    document.getElementById('display').value += '';
 }
 
-function deletelast() {
+function deleteLast() {
     let displayValue = document.getElementById('display').value;
-    document.getElementById('display').value = displayValue.slice(0, 1);
+    document.getElementById('display').value = displayValue.slice(0, -1);
 }
 
 function calculateResult(){
