@@ -1,3 +1,5 @@
+const { doc } = require("mocha/lib/reporters");
+
 function appendToDisplay(value) {
     document.getElementsById('display').value += value;
 }
@@ -14,7 +16,8 @@ function deletelast() {
 function calculateResult(){
     try{
         let result = eval(document.getElementById('display').value);
+        document.getElementById('display').value = result;
     } catch (error) {
-        alert('Espresion inválida')
+        alert('Espresion inválida');
     }
 }
